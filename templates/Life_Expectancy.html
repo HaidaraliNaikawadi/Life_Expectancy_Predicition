@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy Prediction</title>
+</head>
+<body  background="static\images\image1.jpg" >
+    
+    <h1>Life Expectancy Prediction </h1>
+    
+    <form method="POST" action="/predict_expectancy">
+
+        <label>Country:</label>
+        <input type = "text" name = "Country">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Status:</label>
+        <select name = "Status">
+            <option value = "Developing">Developing</option>
+            <option value = "Developed">Developed</option>
+            
+        </select>
+
+        <br>
+        <br>
+
+        <label>Year:</label>
+        <input type = "text" name = "Year">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Adult_Mortality:</label>
+        <input type = "text" name = "Adult_Mortality">
+        </select>
+
+        <br>
+        <br>
+
+        <label>infant_deaths:</label>
+        <input type = "text" name = "infant_deaths">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Alcohol:</label>
+        <input type = "text" name = "Alcohol">
+        </select>
+
+        <br>
+        <br>
+
+        <label>percentage_expenditure:</label>
+        <input type = "text" name = "percentage_expenditure">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Hepatitis_B:</label>
+        <input type = "text" name = "Hepatitis_B">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Measles:</label>
+        <input type = "text" name = "Measles">
+        </select>
+
+        <br>
+        <br>
+
+        <label>BMI:</label>
+        <input type = "text" name = "BMI">
+        </select>
+
+        <br>
+        <br>
+
+        <label>under_five_deaths:</label>
+        <input type = "text" name = "under_five_deaths">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Polio:</label>
+        <input type = "text" name = "Polio">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Total_expenditure:</label>
+        <input type = "text" name = "Total_expenditure">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Diphtheria:</label>
+        <input type = "text" name = "Diphtheria">
+        </select>
+
+        <br>
+        <br>
+
+        <label>HIV_AIDS:</label>
+        <input type = "text" name = "HIV_AIDS">
+        </select>
+
+        <br>
+        <br>
+
+        <label>GDP:</label>
+        <input type = "text" name = "GDP">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Population:</label>
+        <input type = "text" name = "Population">
+        </select>
+
+        <br>
+        <br>
+
+        <label>thinness__1_19_years:</label>
+        <input type = "text" name = "thinness__1_19_years">
+        </select>
+
+        <br>
+        <br>
+
+        <label>thinness_5_9_years:</label>
+        <input type = "text" name = "thinness_5_9_years">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Income_composition_of_resources:</label>
+        <input type = "text" name = "Income_composition_of_resources">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Schooling:</label>
+        <input type = "text" name = "Schooling">
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h3><strong>Life Expectancy will be <b> {{ prediction }} years </b>  </strong></h3>
+
+
+    </form>
+
+</body>
+</html>
